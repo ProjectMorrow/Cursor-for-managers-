@@ -100,7 +100,7 @@ graph TD
     User([Manager]) --> |Cmd+K Query| UI[React / BlockSuite Frontend]
     UI --> |IPC Payload| Orch[Local Node.js/Rust Orchestrator]
 
-    subgraph Local Environment (macOS)
+    subgraph local["Local Environment (macOS)"]
         Orch --> |Fetch Entity Relations| Vault[(Cognimemo Vault / OctoBase)]
         Vault --> |Graph Data| Orch
 
